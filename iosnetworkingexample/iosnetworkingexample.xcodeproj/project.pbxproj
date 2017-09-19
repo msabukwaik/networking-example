@@ -15,6 +15,8 @@
 		5703C9C11F69D5E0004E6011 /* iosnetworkingexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */; };
 		5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */; };
 		5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaints.swift */; };
+		5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
+		5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosnetworkingexampleUITests.swift; sourceTree = "<group>"; };
 		5703C9CD1F69D5E0004E6011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5703C9D91F69E9E4004E6011 /* Constaints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constaints.swift; sourceTree = "<group>"; };
+		5703CA151F6F274B004E6011 /* FlickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerController.swift; sourceTree = "<group>"; };
+		5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerControlerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */,
 				5703C9B71F69D5E0004E6011 /* Info.plist */,
 				5703C9D91F69E9E4004E6011 /* Constaints.swift */,
+				5703CA151F6F274B004E6011 /* FlickerController.swift */,
 			);
 			path = iosnetworkingexample;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		5703C9BF1F69D5E0004E6011 /* iosnetworkingexampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
 				5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */,
 				5703C9C21F69D5E0004E6011 /* Info.plist */,
 			);
@@ -264,6 +270,7 @@
 			files = (
 				5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */,
 				5703C9AE1F69D5E0004E6011 /* ViewController.swift in Sources */,
+				5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */,
 				5703C9AC1F69D5E0004E6011 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5703C9C11F69D5E0004E6011 /* iosnetworkingexampleTests.swift in Sources */,
+				5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

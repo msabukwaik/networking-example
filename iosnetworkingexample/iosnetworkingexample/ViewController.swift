@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension UIApplication{
+    var statusBarView:UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var flickerExampleLbl: UILabel!
@@ -29,67 +35,23 @@ class ViewController: UIViewController {
     //MARK : Action
     
     @IBAction func getNewImage(_ sender: Any) {
-        getImageFromFlicker();
-    }
-    
-    //MARK : Network requests
-    
-    
-    func getImageFromFlicker(){
-        //Get the image
-        
-        //Prepare URL
-        let getPhotoParmeters:[String:String] = [
-            "method" : "flickr.galleries.getPhotos",
-            "api_key" : "09c7c7493e1fc88a6cf99f8ab98bc158",
-            "gallery_id" : "5704-72157622566655097",
-            "format" : "json",
-            "nojsoncallback" : "1",
-            "extras" : "url_m"
-        ]
-        
-        let urlString = Constaints.Flicker.APIBaseClass + (escapeParamters(parms: getPhotoParmeters) ?? "")
-        let url = URL(string: urlString)
-        let request:URLRequest = URLRequest(url: url!)
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if error == nil {
-                var outputDic:[String:AnyObject]?
-                if let data = data{
-                    
-                    do{
-                        outputDic = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:AnyObject]
-                        
-                        //Short code
-                        if let results = outputDic, let photosDict = (results["photos"] as? [String:AnyObject]), let photoDict:[[String:AnyObject]] = photosDict["photo"] as? [[String:AnyObject]]{
-                            let photoIndex = Int(arc4random_uniform(UInt32(photoDict.count)))
-                            let photo = photoDict[photoIndex]
-                            print(photo["url_m"] as! String)
-                            print(photo["title"] as! String)
-                            
-                            //Create image from url
-                            let imageUrl = URL(string: photo["url_m"] as! String)
-                            if let imageData = try? Data(contentsOf: imageUrl!), let image = UIImage(data: imageData){
-                                DispatchQueue.main.async {
-                                    self.photoImageView.image = image
-                                    self.enableUI(true)
-                                }
-                            }
-                        }
-                        
-                        
-                        
-                    }catch{
-                        print("Data could not be parsed")
-                    }
-                }
-            }
-        }
-        
-        task.resume()
         
         //Update the UI
         self.enableUI(false)
+        
+        getImageFromFlicker { (image, error) in
+            DispatchQueue.main.async {
+                if error == nil {
+                    self.photoImageView.image = image
+                    self.enableUI(true)
+                }else{
+                    print("Error: \(error!)")
+                }
+            }
+        }
     }
+    
+    //MARK : Network requests
     
     func enableUI(_ Enabled:Bool) {
         getImageBtn.isEnabled = Enabled
