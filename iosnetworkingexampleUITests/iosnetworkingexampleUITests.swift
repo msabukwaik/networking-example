@@ -33,10 +33,6 @@ class iosnetworkingexampleUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testConnection(){
-        assert(false)
-    }
-    
     func testXCUISiriService() {
         XCUIDevice().siriService.activate(voiceRecognitionText: "Open News")
     }

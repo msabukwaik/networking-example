@@ -10,7 +10,7 @@ import UIKit
 
 
 extension UIStoryboard{
-    static let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+    static let storyboardShared = UIStoryboard(name: "Main", bundle: Bundle.main)
 }
 
 extension ViewController{
@@ -25,6 +25,7 @@ extension ViewController{
             "nojsoncallback" : "1",
             "extras" : "url_m"
         ]
+        
         
         let urlString = Constaints.Flicker.APIBaseClass + (escapeParamters(parms: getPhotoParmeters) ?? "")
         let url = URL(string: urlString)

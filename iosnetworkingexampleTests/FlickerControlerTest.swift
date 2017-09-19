@@ -21,6 +21,7 @@ class FlickerControler: XCTestCase {
         let storybarod = UIStoryboard(name: "Main", bundle: Bundle.main)
         //Ref to the viewcontroller of the storyboard
         vc = storybarod.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        //_ = UIStoryboard.storyboardShared.instantiateViewController(withIdentifier: "ViewController")
     }
     
     override func tearDown() {
@@ -38,23 +39,20 @@ class FlickerControler: XCTestCase {
     //Test the getImageFromFlicker method, it should return the image fetched from flicker as UIImage
     //Note : This is async testing using completion clourse
     func testGetImageFromFlicker() {
-        let expection = expectation(description: "Waiting for testing")
-        var img:UIImage?
+        let expection = expectation(description: "Waiting for timeout reaching")
         
         vc.getImageFromFlicker { (image, error) in
-            if error == nil && image != nil{
+            if error != nil {
+                print("Error : \(error?.description ?? "")")
+                XCTAssert(false)
+            }else if image != nil{
                 expection.fulfill()
-                img = image
             }
         }
         
+        //Timeout for the request is 10 seconds
         self.waitForExpectations(timeout: 10) { (error) in
-            if error == nil{
-                XCTAssert(img != nil)
-            }else{
-                print(error.debugDescription)
-            }
-            
+            print("Error : \(error.debugDescription)")
         }
     }
 }
