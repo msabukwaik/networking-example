@@ -9,20 +9,11 @@
 import UIKit
 
 
+extension UIStoryboard{
+    static let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+}
 
 extension ViewController{
-    
-    class NetworkError: Error {
-        var description:String?
-        init(withDescription desc:String?) {
-            self.description = desc
-        }
-    }
-    
-    func sayHi() -> String {
-        return "Hi"
-    }
-    
     func getImageFromFlicker(completion: @escaping (_ image:UIImage?,_ errorMessage:NetworkError? )->()) {
         //Get the image
         //Prepare URL
@@ -83,7 +74,7 @@ extension ViewController{
                     
                     //return the image as UIImage with no errors
                     completion(image, nil)
-                    
+                    return
                 }
             }catch{
                 completion(nil, NetworkError(withDescription: "Unable to parse data"))
@@ -92,5 +83,12 @@ extension ViewController{
             
         }
         task.resume()
+    }
+}
+
+class NetworkError: Error {
+    var description:String?
+    init(withDescription desc:String?) {
+        self.description = desc
     }
 }

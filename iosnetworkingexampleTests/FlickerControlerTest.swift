@@ -35,6 +35,8 @@ class FlickerControler: XCTestCase {
         
     }
     
+    //Test the getImageFromFlicker method, it should return the image fetched from flicker as UIImage
+    //Note : This is async testing using completion clourse
     func testGetImageFromFlicker() {
         let expection = expectation(description: "Waiting for testing")
         var img:UIImage?
