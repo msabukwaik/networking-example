@@ -10,6 +10,12 @@ import UIKit
 
 extension Bool{
     static func random() -> Bool{
+        
+        if (Int(arc4random_uniform(UInt32(10))) % 2 == 0)
+        {
+            return true
+        }
+        
         return false
     }
 }

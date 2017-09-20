@@ -10,6 +10,14 @@ import UIKit
 
 extension UIImage{
     static func random(nullable:Bool? = false) -> UIImage?{
+        if nullable == true{
+            if (Int(arc4random_uniform(UInt32(10))) % 2 == 0)
+            {
+                return UIImage(named: "example")
+            }
+            
+            return nil
+        }
         return UIImage(named: "example")
     }
 }

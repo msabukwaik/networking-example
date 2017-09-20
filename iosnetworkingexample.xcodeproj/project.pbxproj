@@ -49,6 +49,12 @@
 		5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
 		5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
 		5720DB921F7322B6002CD0D3 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB911F7322B6002CD0D3 /* MainController.swift */; };
+		5720DB961F73260A002CD0D3 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB951F73260A002CD0D3 /* StringExtensionTest.swift */; };
+		5720DB981F73261F002CD0D3 /* IntExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB971F73261F002CD0D3 /* IntExtensionTest.swift */; };
+		5720DB9A1F732631002CD0D3 /* BoolExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB991F732631002CD0D3 /* BoolExtensionTest.swift */; };
+		5720DB9C1F73264B002CD0D3 /* UIImageExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */; };
+		5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */; };
+		5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,12 @@
 		5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5720DB911F7322B6002CD0D3 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5720DB951F73260A002CD0D3 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
+		5720DB971F73261F002CD0D3 /* IntExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTest.swift; sourceTree = "<group>"; };
+		5720DB991F732631002CD0D3 /* BoolExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensionTest.swift; sourceTree = "<group>"; };
+		5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTest.swift; sourceTree = "<group>"; };
+		5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensionTest.swift; sourceTree = "<group>"; };
+		5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +172,8 @@
 		5703C9BF1F69D5E0004E6011 /* iosnetworkingexampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
-				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
+				5720DB941F73259A002CD0D3 /* ControllerTest */,
+				5720DB931F732577002CD0D3 /* ExtensionTest */,
 				5703C9C21F69D5E0004E6011 /* Info.plist */,
 			);
 			path = iosnetworkingexampleTests;
@@ -224,6 +236,28 @@
 				5703C9AF1F69D5E0004E6011 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5720DB931F732577002CD0D3 /* ExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				5720DB951F73260A002CD0D3 /* StringExtensionTest.swift */,
+				5720DB971F73261F002CD0D3 /* IntExtensionTest.swift */,
+				5720DB991F732631002CD0D3 /* BoolExtensionTest.swift */,
+				5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */,
+				5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */,
+				5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */,
+			);
+			path = ExtensionTest;
+			sourceTree = "<group>";
+		};
+		5720DB941F73259A002CD0D3 /* ControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
+				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
+			);
+			path = ControllerTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,13 +417,19 @@
 			files = (
 				5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */,
 				5720DB6A1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
+				5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTest.swift in Sources */,
+				5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTest.swift in Sources */,
 				5720DB811F73122D002CD0D3 /* Utility.swift in Sources */,
 				5720DB881F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
 				5720DB7D1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
 				5720DB771F731046002CD0D3 /* UIImageExtension.swift in Sources */,
+				5720DB961F73260A002CD0D3 /* StringExtensionTest.swift in Sources */,
 				5720DB6F1F731008002CD0D3 /* IntExtension.swift in Sources */,
+				5720DB9C1F73264B002CD0D3 /* UIImageExtensionTest.swift in Sources */,
 				5720DB611F72C448002CD0D3 /* PhotoCommon.swift in Sources */,
+				5720DB981F73261F002CD0D3 /* IntExtensionTest.swift in Sources */,
 				5720DB731F731025002CD0D3 /* BoolExtension.swift in Sources */,
+				5720DB9A1F732631002CD0D3 /* BoolExtensionTest.swift in Sources */,
 				5720DB8A1F73198D002CD0D3 /* Constaint.swift in Sources */,
 				5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
 				5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */,
