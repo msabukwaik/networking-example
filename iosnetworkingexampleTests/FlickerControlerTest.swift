@@ -41,11 +41,12 @@ class FlickerControler: XCTestCase {
     func testGetImageFromFlicker() {
         let expection = expectation(description: "Waiting for timeout reaching")
         
-        vc.getImageFromFlicker { (image, error) in
+        vc.getImageFromFlicker { (photo, error) in
             if error != nil {
                 print("Error : \(error?.description ?? "")")
                 XCTAssert(false)
-            }else if image != nil{
+            }else if photo != nil{
+                //print(photo?.desc() ?? "")
                 expection.fulfill()
             }
         }

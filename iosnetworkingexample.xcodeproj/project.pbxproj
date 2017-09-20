@@ -17,6 +17,10 @@
 		5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaints.swift */; };
 		5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
 		5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */; };
+		5720DB601F72C365002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
+		5720DB611F72C448002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
+		5720DB621F72C449002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
+		5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 		5703C9D91F69E9E4004E6011 /* Constaints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constaints.swift; sourceTree = "<group>"; };
 		5703CA151F6F274B004E6011 /* FlickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerController.swift; sourceTree = "<group>"; };
 		5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerControlerTest.swift; sourceTree = "<group>"; };
+		5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommon.swift; sourceTree = "<group>"; };
+		5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommonTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		5703C9AA1F69D5E0004E6011 /* iosnetworkingexample */ = {
 			isa = PBXGroup;
 			children = (
+				5720DB631F72C455002CD0D3 /* Controllers */,
+				5720DB5E1F72C2FB002CD0D3 /* Common */,
 				5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */,
 				5703C9AD1F69D5E0004E6011 /* ViewController.swift */,
 				5703C9AF1F69D5E0004E6011 /* Main.storyboard */,
@@ -110,7 +118,6 @@
 				5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */,
 				5703C9B71F69D5E0004E6011 /* Info.plist */,
 				5703C9D91F69E9E4004E6011 /* Constaints.swift */,
-				5703CA151F6F274B004E6011 /* FlickerController.swift */,
 			);
 			path = iosnetworkingexample;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		5703C9BF1F69D5E0004E6011 /* iosnetworkingexampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
 				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
 				5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */,
 				5703C9C21F69D5E0004E6011 /* Info.plist */,
@@ -132,6 +140,22 @@
 				5703C9CD1F69D5E0004E6011 /* Info.plist */,
 			);
 			path = iosnetworkingexampleUITests;
+			sourceTree = "<group>";
+		};
+		5720DB5E1F72C2FB002CD0D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5720DB631F72C455002CD0D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5703CA151F6F274B004E6011 /* FlickerController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +295,7 @@
 				5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */,
 				5703C9AE1F69D5E0004E6011 /* ViewController.swift in Sources */,
 				5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */,
+				5720DB601F72C365002CD0D3 /* PhotoCommon.swift in Sources */,
 				5703C9AC1F69D5E0004E6011 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +306,8 @@
 			files = (
 				5703C9C11F69D5E0004E6011 /* iosnetworkingexampleTests.swift in Sources */,
 				5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */,
+				5720DB611F72C448002CD0D3 /* PhotoCommon.swift in Sources */,
+				5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */,
+				5720DB621F72C449002CD0D3 /* PhotoCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

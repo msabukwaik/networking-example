@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var flickerExampleLbl: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var getImageBtn: UIButton!
+    let seederDataSource:Bool = false //Determine the data source the seeded the views
     
     
     
@@ -38,17 +39,25 @@ class ViewController: UIViewController {
         
         //Update the UI
         self.enableUI(false)
-        
-        getImageFromFlicker { (image, error) in
+        if seederDataSource{
             DispatchQueue.main.async {
-                if error == nil {
-                    self.photoImageView.image = image
-                    self.enableUI(true)
-                }else{
-                    print("Error: \(error!)")
+                self.photoImageView.image = UIImage(named:"example")
+                self.enableUI(true)
+            }
+        }else{
+            getImageFromFlicker { (photo, error) in
+                DispatchQueue.main.async {
+                    if error == nil {
+                        print(photo?.desc() ?? "")
+                        self.photoImageView.image = photo?.image
+                        self.enableUI(true)
+                    }else{
+                        print("Error: \(error!)")
+                    }
                 }
             }
         }
+        
     }
     
     //MARK : Network requests

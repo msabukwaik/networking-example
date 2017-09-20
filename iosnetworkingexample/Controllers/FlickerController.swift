@@ -14,7 +14,7 @@ extension UIStoryboard{
 }
 
 extension ViewController{
-    func getImageFromFlicker(completion: @escaping (_ image:UIImage?,_ errorMessage:NetworkError? )->()) {
+    func getImageFromFlicker(completion: @escaping (_ photo:PhotoCommon?,_ errorMessage:NetworkError? )->()) {
         //Get the image
         //Prepare URL
         let getPhotoParmeters:[String:String] = [
@@ -67,14 +67,14 @@ extension ViewController{
                         completion(nil, NetworkError(withDescription: "Unable to convert the image to data"))
                         return
                     }
-                    
+                    print("image data = \(imageData)")
                     guard let image = UIImage(data: imageData) else {
                         completion(nil, NetworkError(withDescription: "Unable to convert image data to uiimage"))
                         return
                     }
                     
                     //return the image as UIImage with no errors
-                    completion(image, nil)
+                    completion(PhotoCommon(id:photo["id"] as? String, image: image, title:photo["title"] as? String), nil)
                     return
                 }
             }catch{
