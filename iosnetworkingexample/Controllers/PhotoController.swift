@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotoController: UIViewController {
 
     @IBOutlet weak var flickerExampleLbl: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!

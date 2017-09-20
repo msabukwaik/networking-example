@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5703C9AC1F69D5E0004E6011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */; };
-		5703C9AE1F69D5E0004E6011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9AD1F69D5E0004E6011 /* ViewController.swift */; };
+		5703C9AE1F69D5E0004E6011 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9AD1F69D5E0004E6011 /* PhotoController.swift */; };
 		5703C9B11F69D5E0004E6011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9AF1F69D5E0004E6011 /* Main.storyboard */; };
 		5703C9B31F69D5E0004E6011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9B21F69D5E0004E6011 /* Assets.xcassets */; };
 		5703C9B61F69D5E0004E6011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */; };
@@ -48,6 +48,7 @@
 		5720DB8D1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
 		5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
 		5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
+		5720DB921F7322B6002CD0D3 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB911F7322B6002CD0D3 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,7 @@
 /* Begin PBXFileReference section */
 		5703C9A81F69D5E0004E6011 /* iosnetworkingexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosnetworkingexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5703C9AD1F69D5E0004E6011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5703C9AD1F69D5E0004E6011 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		5703C9B01F69D5E0004E6011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5703C9B21F69D5E0004E6011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5703C9B51F69D5E0004E6011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		5720DB7F1F73122D002CD0D3 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5720DB911F7322B6002CD0D3 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +188,9 @@
 		5720DB631F72C455002CD0D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5703C9AD1F69D5E0004E6011 /* ViewController.swift */,
+				5703C9AD1F69D5E0004E6011 /* PhotoController.swift */,
 				5703CA151F6F274B004E6011 /* FlickerController.swift */,
+				5720DB911F7322B6002CD0D3 /* MainController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -364,7 +367,8 @@
 				5703C9DA1F69E9E4004E6011 /* Constaint.swift in Sources */,
 				5720DB721F731025002CD0D3 /* BoolExtension.swift in Sources */,
 				5720DB871F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
-				5703C9AE1F69D5E0004E6011 /* ViewController.swift in Sources */,
+				5720DB921F7322B6002CD0D3 /* MainController.swift in Sources */,
+				5703C9AE1F69D5E0004E6011 /* PhotoController.swift in Sources */,
 				5720DB7C1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
 				5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */,
 				5720DB8D1F731AA2002CD0D3 /* NetworkError.swift in Sources */,

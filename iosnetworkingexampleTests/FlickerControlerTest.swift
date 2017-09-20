@@ -11,23 +11,15 @@ import XCTest
 
 class FlickerControlerTest: XCTestCase {
     
-    var vc:ViewController!
-    
     override func setUp() {
         super.setUp()
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        //Ref to the storyboard
-        let storybarod = UIStoryboard(name: "Main", bundle: Bundle.main)
-        //Ref to the viewcontroller of the storyboard
-        vc = storybarod.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        //_ = UIStoryboard.storyboardShared.instantiateViewController(withIdentifier: "ViewController")
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-        vc = nil
     }
     
     func testExample() {
