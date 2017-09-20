@@ -8,30 +8,6 @@
 
 import UIKit
 
-extension String{
-    static func random(withLength:Int? = 10, nullable:Bool? = false) -> String {
-        return "sfdfsdfdssda"
-    }
-}
-
-extension Int{
-    static func random(withLength:Int? = 10, nullable:Bool? = false) -> Int {
-        return 123456789
-    }
-}
-
-extension UIImage{
-    static func random(nullable:Bool? = false) -> UIImage?{
-        return UIImage(named: "example")
-    }
-}
-
-extension Bool{
-    static func random() -> Bool{
-        return false
-    }
-}
-
 struct PhotoCommon {
     var id:String?
     var image:UIImage?

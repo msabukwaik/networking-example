@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class FlickerControler: XCTestCase {
+class FlickerControlerTest: XCTestCase {
     
     var vc:ViewController!
     
@@ -41,7 +41,7 @@ class FlickerControler: XCTestCase {
     func testGetImageFromFlicker() {
         let expection = expectation(description: "Waiting for timeout reaching")
         
-        vc.getImageFromFlicker { (photo, error) in
+        FlickerControler.getImageFromFlicker{ (photo, error) in
             if error != nil {
                 print("Error : \(error?.description ?? "")")
                 XCTAssert(false)

@@ -12,15 +12,42 @@
 		5703C9B11F69D5E0004E6011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9AF1F69D5E0004E6011 /* Main.storyboard */; };
 		5703C9B31F69D5E0004E6011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9B21F69D5E0004E6011 /* Assets.xcassets */; };
 		5703C9B61F69D5E0004E6011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */; };
-		5703C9C11F69D5E0004E6011 /* iosnetworkingexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */; };
 		5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */; };
-		5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaints.swift */; };
+		5703C9DA1F69E9E4004E6011 /* Constaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaint.swift */; };
 		5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
 		5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */; };
 		5720DB601F72C365002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
 		5720DB611F72C448002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
 		5720DB621F72C449002CD0D3 /* PhotoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */; };
 		5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */; };
+		5720DB691F730FCC002CD0D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB681F730FCC002CD0D3 /* StringExtension.swift */; };
+		5720DB6A1F730FCC002CD0D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB681F730FCC002CD0D3 /* StringExtension.swift */; };
+		5720DB6B1F730FCC002CD0D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB681F730FCC002CD0D3 /* StringExtension.swift */; };
+		5720DB6E1F731008002CD0D3 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB6D1F731008002CD0D3 /* IntExtension.swift */; };
+		5720DB6F1F731008002CD0D3 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB6D1F731008002CD0D3 /* IntExtension.swift */; };
+		5720DB701F731008002CD0D3 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB6D1F731008002CD0D3 /* IntExtension.swift */; };
+		5720DB721F731025002CD0D3 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB711F731025002CD0D3 /* BoolExtension.swift */; };
+		5720DB731F731025002CD0D3 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB711F731025002CD0D3 /* BoolExtension.swift */; };
+		5720DB741F731025002CD0D3 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB711F731025002CD0D3 /* BoolExtension.swift */; };
+		5720DB761F731046002CD0D3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB751F731046002CD0D3 /* UIImageExtension.swift */; };
+		5720DB771F731046002CD0D3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB751F731046002CD0D3 /* UIImageExtension.swift */; };
+		5720DB781F731046002CD0D3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB751F731046002CD0D3 /* UIImageExtension.swift */; };
+		5720DB7C1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7B1F7311CE002CD0D3 /* UIApplicationExtension.swift */; };
+		5720DB7D1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7B1F7311CE002CD0D3 /* UIApplicationExtension.swift */; };
+		5720DB7E1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7B1F7311CE002CD0D3 /* UIApplicationExtension.swift */; };
+		5720DB801F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
+		5720DB811F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
+		5720DB821F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
+		5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
+		5720DB841F731260002CD0D3 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
+		5720DB871F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
+		5720DB881F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
+		5720DB891F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
+		5720DB8A1F73198D002CD0D3 /* Constaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaint.swift */; };
+		5720DB8B1F73198E002CD0D3 /* Constaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703C9D91F69E9E4004E6011 /* Constaint.swift */; };
+		5720DB8D1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
+		5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
+		5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,16 +76,23 @@
 		5703C9B51F69D5E0004E6011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5703C9B71F69D5E0004E6011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5703C9BC1F69D5E0004E6011 /* iosnetworkingexampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosnetworkingexampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosnetworkingexampleTests.swift; sourceTree = "<group>"; };
 		5703C9C21F69D5E0004E6011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5703C9C71F69D5E0004E6011 /* iosnetworkingexampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosnetworkingexampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosnetworkingexampleUITests.swift; sourceTree = "<group>"; };
 		5703C9CD1F69D5E0004E6011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5703C9D91F69E9E4004E6011 /* Constaints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constaints.swift; sourceTree = "<group>"; };
+		5703C9D91F69E9E4004E6011 /* Constaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constaint.swift; sourceTree = "<group>"; };
 		5703CA151F6F274B004E6011 /* FlickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerController.swift; sourceTree = "<group>"; };
 		5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerControlerTest.swift; sourceTree = "<group>"; };
 		5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommon.swift; sourceTree = "<group>"; };
 		5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommonTest.swift; sourceTree = "<group>"; };
+		5720DB681F730FCC002CD0D3 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5720DB6D1F731008002CD0D3 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		5720DB711F731025002CD0D3 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		5720DB751F731046002CD0D3 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		5720DB7B1F7311CE002CD0D3 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		5720DB7F1F73122D002CD0D3 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,15 +143,14 @@
 		5703C9AA1F69D5E0004E6011 /* iosnetworkingexample */ = {
 			isa = PBXGroup;
 			children = (
+				5720DB7A1F7310EC002CD0D3 /* View */,
+				5720DB791F731096002CD0D3 /* Extensions */,
+				5720DB671F730E78002CD0D3 /* Helper */,
 				5720DB631F72C455002CD0D3 /* Controllers */,
 				5720DB5E1F72C2FB002CD0D3 /* Common */,
 				5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */,
-				5703C9AD1F69D5E0004E6011 /* ViewController.swift */,
-				5703C9AF1F69D5E0004E6011 /* Main.storyboard */,
 				5703C9B21F69D5E0004E6011 /* Assets.xcassets */,
-				5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */,
 				5703C9B71F69D5E0004E6011 /* Info.plist */,
-				5703C9D91F69E9E4004E6011 /* Constaints.swift */,
 			);
 			path = iosnetworkingexample;
 			sourceTree = "<group>";
@@ -127,7 +160,6 @@
 			children = (
 				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
 				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
-				5703C9C01F69D5E0004E6011 /* iosnetworkingexampleTests.swift */,
 				5703C9C21F69D5E0004E6011 /* Info.plist */,
 			);
 			path = iosnetworkingexampleTests;
@@ -146,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				5720DB5F1F72C365002CD0D3 /* PhotoCommon.swift */,
+				5720DB8C1F731AA2002CD0D3 /* NetworkError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -153,9 +186,41 @@
 		5720DB631F72C455002CD0D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5703C9AD1F69D5E0004E6011 /* ViewController.swift */,
 				5703CA151F6F274B004E6011 /* FlickerController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5720DB671F730E78002CD0D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5703C9D91F69E9E4004E6011 /* Constaint.swift */,
+				5720DB7F1F73122D002CD0D3 /* Utility.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5720DB791F731096002CD0D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5720DB681F730FCC002CD0D3 /* StringExtension.swift */,
+				5720DB6D1F731008002CD0D3 /* IntExtension.swift */,
+				5720DB711F731025002CD0D3 /* BoolExtension.swift */,
+				5720DB751F731046002CD0D3 /* UIImageExtension.swift */,
+				5720DB7B1F7311CE002CD0D3 /* UIApplicationExtension.swift */,
+				5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5720DB7A1F7310EC002CD0D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5703C9B41F69D5E0004E6011 /* LaunchScreen.storyboard */,
+				5703C9AF1F69D5E0004E6011 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5703C9DA1F69E9E4004E6011 /* Constaints.swift in Sources */,
+				5720DB761F731046002CD0D3 /* UIImageExtension.swift in Sources */,
+				5720DB6E1F731008002CD0D3 /* IntExtension.swift in Sources */,
+				5720DB691F730FCC002CD0D3 /* StringExtension.swift in Sources */,
+				5720DB801F73122D002CD0D3 /* Utility.swift in Sources */,
+				5703C9DA1F69E9E4004E6011 /* Constaint.swift in Sources */,
+				5720DB721F731025002CD0D3 /* BoolExtension.swift in Sources */,
+				5720DB871F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
 				5703C9AE1F69D5E0004E6011 /* ViewController.swift in Sources */,
+				5720DB7C1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
 				5703CA161F6F274B004E6011 /* FlickerController.swift in Sources */,
+				5720DB8D1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
 				5720DB601F72C365002CD0D3 /* PhotoCommon.swift in Sources */,
 				5703C9AC1F69D5E0004E6011 /* AppDelegate.swift in Sources */,
 			);
@@ -304,9 +377,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5703C9C11F69D5E0004E6011 /* iosnetworkingexampleTests.swift in Sources */,
 				5703CA181F6F2EC7004E6011 /* FlickerControlerTest.swift in Sources */,
+				5720DB6A1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
+				5720DB811F73122D002CD0D3 /* Utility.swift in Sources */,
+				5720DB881F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
+				5720DB7D1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
+				5720DB771F731046002CD0D3 /* UIImageExtension.swift in Sources */,
+				5720DB6F1F731008002CD0D3 /* IntExtension.swift in Sources */,
 				5720DB611F72C448002CD0D3 /* PhotoCommon.swift in Sources */,
+				5720DB731F731025002CD0D3 /* BoolExtension.swift in Sources */,
+				5720DB8A1F73198D002CD0D3 /* Constaint.swift in Sources */,
+				5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
+				5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */,
 				5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +397,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5720DB8B1F73198E002CD0D3 /* Constaint.swift in Sources */,
+				5720DB6B1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
+				5720DB701F731008002CD0D3 /* IntExtension.swift in Sources */,
+				5720DB7E1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
+				5720DB741F731025002CD0D3 /* BoolExtension.swift in Sources */,
+				5720DB821F73122D002CD0D3 /* Utility.swift in Sources */,
+				5720DB781F731046002CD0D3 /* UIImageExtension.swift in Sources */,
+				5720DB841F731260002CD0D3 /* FlickerController.swift in Sources */,
 				5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */,
+				5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
+				5720DB891F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
 				5720DB621F72C449002CD0D3 /* PhotoCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

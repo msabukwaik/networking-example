@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Constaints {
+class Constaint {
     struct Flicker {
         static let APIBaseClass = "https://api.flickr.com/services/rest/"
     }

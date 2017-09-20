@@ -8,15 +8,10 @@
 
 import UIKit
 
-
-extension UIStoryboard{
-    static let storyboardShared = UIStoryboard(name: "Main", bundle: Bundle.main)
-}
-
-extension ViewController{
-    func getImageFromFlicker(completion: @escaping (_ photo:PhotoCommon?,_ errorMessage:NetworkError? )->()) {
-        //Get the image
-        //Prepare URL
+class FlickerControler {
+    class func getImageFromFlicker(completion: @escaping (_ photo:PhotoCommon?,_ errorMessage:NetworkError? )->()) {
+        
+        //Prepare request info
         let getPhotoParmeters:[String:String] = [
             "method" : "flickr.galleries.getPhotos",
             "api_key" : "09c7c7493e1fc88a6cf99f8ab98bc158",
@@ -25,9 +20,8 @@ extension ViewController{
             "nojsoncallback" : "1",
             "extras" : "url_m"
         ]
-        
-        
-        let urlString = Constaints.Flicker.APIBaseClass + (escapeParamters(parms: getPhotoParmeters) ?? "")
+
+        let urlString = Constaint.Flicker.APIBaseClass + (escapeParamters(parms: getPhotoParmeters) ?? "")
         let url = URL(string: urlString)
         let request:URLRequest = URLRequest(url: url!)
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -84,12 +78,5 @@ extension ViewController{
             
         }
         task.resume()
-    }
-}
-
-class NetworkError: Error {
-    var description:String?
-    init(withDescription desc:String?) {
-        self.description = desc
     }
 }
