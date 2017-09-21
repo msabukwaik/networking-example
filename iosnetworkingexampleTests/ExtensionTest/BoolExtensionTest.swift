@@ -35,7 +35,7 @@ class BoolExtensionTest: XCTestCase {
     
     func testRandom() {
         let value = Bool.random()
-        XCTAssert( value == true || value == false )
+        XCTAssertTrue( value == true || value == false )
     }
     
 }

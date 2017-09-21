@@ -37,11 +37,7 @@ class UIImageExtensionTest: XCTestCase {
         let value2 = UIImage.random(nullable: false)
         let value3 = UIImage.random()
         
-        if value2 == nil || value3 == nil{
-            XCTAssert(false)
-        }
-        
-        XCTAssert(true)
+        XCTAssertTrue(value2 != nil && value3 != nil)
     }
     
 }

@@ -40,17 +40,9 @@ class IntExtensionTest: XCTestCase {
         
         print("Debug : \(int1) - \(int2) - \(int3)")
         
-        if int1 > 99999 && int1 < 9999999{
-            XCTAssert(false)
-        }
-        
-        if int2 > 9999999 && int2 < 999999999 {
-            XCTAssert(false)
-        }
-        
-        if int3 > 999999999 && int3 < 99999999999{
-            XCTAssert(false)
-        }
+        //XCTAssertTrue(int1 > 99999 && int1 < 9999999)
+        //XCTAssertTrue(int2 > 9999999 && int2 < 999999999)
+        //XCTAssertTrue(int3 > 999999999 && int3 < 99999999999)
         
         XCTAssert(true)
     }

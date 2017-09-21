@@ -55,6 +55,7 @@
 		5720DB9C1F73264B002CD0D3 /* UIImageExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */; };
 		5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */; };
 		5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */; };
+		575147581F73A89B00EC2970 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575147571F73A89B00EC2970 /* UtilityTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTest.swift; sourceTree = "<group>"; };
 		5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensionTest.swift; sourceTree = "<group>"; };
 		5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensionTest.swift; sourceTree = "<group>"; };
+		575147571F73A89B00EC2970 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		5703C9BF1F69D5E0004E6011 /* iosnetworkingexampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				575147561F73A87C00EC2970 /* Helper */,
 				5720DB941F73259A002CD0D3 /* ControllerTest */,
 				5720DB931F732577002CD0D3 /* ExtensionTest */,
 				5703C9C21F69D5E0004E6011 /* Info.plist */,
@@ -258,6 +261,14 @@
 				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
 			);
 			path = ControllerTest;
+			sourceTree = "<group>";
+		};
+		575147561F73A87C00EC2970 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				575147571F73A89B00EC2970 /* UtilityTest.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +430,7 @@
 				5720DB6A1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
 				5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTest.swift in Sources */,
 				5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTest.swift in Sources */,
+				575147581F73A89B00EC2970 /* UtilityTest.swift in Sources */,
 				5720DB811F73122D002CD0D3 /* Utility.swift in Sources */,
 				5720DB881F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
 				5720DB7D1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,

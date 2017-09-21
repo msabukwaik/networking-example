@@ -31,29 +31,53 @@ class PhotoCommonTest: XCTestCase {
     
     //Constructor unit test
     func testInit() {
-        var isPassed:Bool = true
         let photo1 = PhotoCommon(id: "id", image: UIImage(contentsOfFile: "image"), title: "title", owner: "owner", secret: "secret", server: 1, farm: 2, ispublic: 3, isfriend: true, isfamily: false, url_m: "url_m", height_m: 4, width_m: 5, is_primary: 6, has_comment: 7)
         let photo2 = PhotoCommon(id: "id", image: UIImage(contentsOfFile: "image"), title: "title")
         let photo3 = PhotoCommon(id: nil, image: nil, title: nil)
         let photo4 = PhotoCommon(id: nil, image: nil, title: nil, owner: nil, secret: nil, server: nil, farm: nil, ispublic: nil, isfriend: nil, isfamily: nil, url_m: nil, height_m: nil, width_m: nil, is_primary: nil, has_comment: nil)
+
+        XCTAssertEqual(photo1.id, "id")
+        XCTAssertEqual(photo1.image, UIImage(contentsOfFile: "image"))
+        XCTAssertEqual(photo1.title, "title")
+        XCTAssertEqual(photo1.owner, "owner")
+        XCTAssertEqual(photo1.secret, "secret")
+        XCTAssertEqual(photo1.server, 1)
+        XCTAssertEqual(photo1.farm, 2)
+        XCTAssertEqual(photo1.ispublic, 3)
+        XCTAssertEqual(photo1.isfriend, true)
+        XCTAssertEqual(photo1.isfamily, false)
+        XCTAssertEqual(photo1.url_m, "url_m")
+        XCTAssertEqual(photo1.height_m, 4)
+        XCTAssertEqual(photo1.width_m, 5)
+        XCTAssertEqual(photo1.is_primary, 6)
+        XCTAssertEqual(photo1.has_comment, 7)
         
-        if !(photo1.id == "id" && photo1.image == UIImage(contentsOfFile: "image") && photo1.title == "title" && photo1.owner == "owner" && photo1.secret == "secret" && photo1.server == 1 && photo1.farm == 2 && photo1.ispublic == 3 && photo1.isfriend == true && photo1.isfamily == false && photo1.url_m == "url_m" && photo1.height_m == 4 && photo1.width_m == 5 && photo1.is_primary == 6 && photo1.has_comment == 7){
-            isPassed = false
-        }
+
+        XCTAssertEqual(photo2.id, "id")
+        XCTAssertEqual(photo2.image, UIImage(contentsOfFile: "image"))
+        XCTAssertEqual(photo2.title, "title")
         
-        if !(photo2.id == "id" && photo2.image == UIImage(contentsOfFile: "image") && photo2.title == "title"){
-            isPassed = false
-        }
+
+        XCTAssertNil(photo3.id)
+        XCTAssertNil(photo3.image)
+        XCTAssertNil(photo3.title)
         
-        if !(photo3.id == nil && photo3.image == nil && photo3.title == nil){
-            isPassed = false
-        }
         
-        if !(photo4.id == nil && photo4.image == nil && photo4.title == nil && photo4.owner == nil && photo4.secret == nil && photo4.server == nil && photo4.farm == nil && photo4.ispublic == nil && photo4.isfriend == nil && photo4.isfamily == nil && photo4.url_m == nil && photo4.height_m == nil && photo4.width_m == nil && photo4.is_primary == nil && photo4.has_comment == nil){
-            isPassed = false
-        }
-        
-        XCTAssert(isPassed)
+        XCTAssertNil(photo4.id)
+        XCTAssertNil(photo4.image)
+        XCTAssertNil(photo4.title)
+        XCTAssertNil(photo4.owner)
+        XCTAssertNil(photo4.secret)
+        XCTAssertNil(photo4.server)
+        XCTAssertNil(photo4.farm)
+        XCTAssertNil(photo4.ispublic)
+        XCTAssertNil(photo4.isfriend)
+        XCTAssertNil(photo4.isfamily)
+        XCTAssertNil(photo4.url_m)
+        XCTAssertNil(photo4.height_m)
+        XCTAssertNil(photo4.width_m)
+        XCTAssertNil(photo4.is_primary)
+        XCTAssertNil(photo4.has_comment)
     }
     
     //Test seeder with single value

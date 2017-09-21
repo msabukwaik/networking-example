@@ -1,5 +1,5 @@
 //
-//  StringExtensionTest.swift
+//  UtilityTest.swift
 //  iosnetworkingexampleTests
 //
 //  Created by Mohammed S A Kwaik on 9/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class StringExtensionTest: XCTestCase {
+class UtilityTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,16 +33,19 @@ class StringExtensionTest: XCTestCase {
         }
     }
     
-    func testRandom(){
-        let str1 = String.random(withLength: 6, nullable: false)
-        let str2 = String.random(withLength: 8, nullable: true)
-        let str3 = String.random()
+    func testEscapeParamters() {
+        let getPhotoParmeters:[String:String] = [
+            "method" : "flickr.galleries.getPhotos",
+            "api_key" : "09c7c7493e1fc88a6cf99f8ab98bc158",
+            "gallery_id" : "5704-72157622566655097",
+            "format" : "json",
+            "nojsoncallback" : "1",
+            "extras" : "url_m"
+        ]
         
-        print("Debug : \(str1) - \(str2) - \(str3)")
-        
-        XCTAssertTrue(str1.count == 6)
-        XCTAssertTrue(str2.count == 8)
-        XCTAssertTrue(str3.count == 10)
+        let urlString = escapeParamters(parms: getPhotoParmeters)
+        XCTAssertNotNil(urlString)
+        XCTAssertFalse(urlString!.contains(" "))
     }
     
 }
