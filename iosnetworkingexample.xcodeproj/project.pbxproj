@@ -174,6 +174,7 @@
 		5703C9BF1F69D5E0004E6011 /* iosnetworkingexampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				575E83091F818EB40017987D /* Common */,
 				575147561F73A87C00EC2970 /* Helper */,
 				5720DB941F73259A002CD0D3 /* ControllerTest */,
 				5720DB931F732577002CD0D3 /* ExtensionTest */,
@@ -257,7 +258,6 @@
 		5720DB941F73259A002CD0D3 /* ControllerTest */ = {
 			isa = PBXGroup;
 			children = (
-				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
 				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
 			);
 			path = ControllerTest;
@@ -269,6 +269,14 @@
 				575147571F73A89B00EC2970 /* UtilityTest.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		575E83091F818EB40017987D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5720DB641F72CF75002CD0D3 /* PhotoCommonTest.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
