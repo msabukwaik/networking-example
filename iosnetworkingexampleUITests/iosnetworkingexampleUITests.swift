@@ -32,4 +32,29 @@ class iosnetworkingexampleUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testatherScreenshots(){
+        XCTContext.runActivity(named: "capture screenshots") { activity in
+            
+            //Main screen
+            let mainScreen = XCUIScreen.main
+            var fullScreenShot = mainScreen.screenshot()
+            var fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
+            fullScreenShotAttachment.lifetime = .keepAlways
+            activity.add(fullScreenShotAttachment)
+            
+            app.buttons["Show Random Image"].firstMatch.tap()
+            fullScreenShot = mainScreen.screenshot()
+            fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
+            fullScreenShotAttachment.lifetime = .keepAlways
+            activity.add(fullScreenShotAttachment)
+            
+            app.buttons["Get new image"].firstMatch.tap()
+            sleep(10)
+            fullScreenShot = mainScreen.screenshot()
+            fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
+            fullScreenShotAttachment.lifetime = .keepAlways
+            activity.add(fullScreenShotAttachment)
+        }
+    }
+    
 }
