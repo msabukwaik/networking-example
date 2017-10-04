@@ -1,5 +1,5 @@
 //
-//  StringExtensionTest.swift
+//  UIImageExtensionTest.swift
 //  iosnetworkingexampleTests
 //
 //  Created by Mohammed S A Kwaik on 9/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class StringExtensionTest: XCTestCase {
+class UIImageExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,16 +33,11 @@ class StringExtensionTest: XCTestCase {
         }
     }
     
-    func testRandom(){
-        let str1 = String.random(withLength: 6, nullable: false)
-        let str2 = String.random(withLength: 8, nullable: true)
-        let str3 = String.random()
+    func testRandom() {
+        let value2 = UIImage.random(nullable: false)
+        let value3 = UIImage.random()
         
-        print("Debug : \(str1) - \(str2) - \(str3)")
-        
-        XCTAssertTrue(str1.count == 6)
-        XCTAssertTrue(str2.count == 8)
-        XCTAssertTrue(str3.count == 10)
+        XCTAssertTrue(value2 != nil && value3 != nil)
     }
     
 }

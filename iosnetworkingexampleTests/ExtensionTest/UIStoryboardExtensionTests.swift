@@ -1,5 +1,5 @@
 //
-//  UIApplicationExtensionTest.swift
+//  UIStoryboardExtensionTest.swift
 //  iosnetworkingexampleTests
 //
 //  Created by Mohammed S A Kwaik on 9/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class UIApplicationExtensionTest: XCTestCase {
+class UIStoryboardExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,7 +33,8 @@ class UIApplicationExtensionTest: XCTestCase {
         }
     }
     
-    func testStatusBarView() {
+    func testStoryboardShared() {
         XCTAssert(true)
     }
+    
 }

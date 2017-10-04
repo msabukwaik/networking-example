@@ -1,5 +1,5 @@
 //
-//  BoolExtensionTest.swift
+//  StringExtensionTest.swift
 //  iosnetworkingexampleTests
 //
 //  Created by Mohammed S A Kwaik on 9/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class BoolExtensionTest: XCTestCase {
+class StringExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,9 +33,16 @@ class BoolExtensionTest: XCTestCase {
         }
     }
     
-    func testRandom() {
-        let value = Bool.random()
-        XCTAssertTrue( value == true || value == false )
+    func testRandom(){
+        let str1 = String.random(withLength: 6, nullable: false)
+        let str2 = String.random(withLength: 8, nullable: true)
+        let str3 = String.random()
+        
+        print("Debug : \(str1) - \(str2) - \(str3)")
+        
+        XCTAssertTrue(str1.count == 6)
+        XCTAssertTrue(str2.count == 8)
+        XCTAssertTrue(str3.count == 10)
     }
     
 }

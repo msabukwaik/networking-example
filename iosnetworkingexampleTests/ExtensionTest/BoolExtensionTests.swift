@@ -1,5 +1,5 @@
 //
-//  UIStoryboardExtensionTest.swift
+//  BoolExtensionTest.swift
 //  iosnetworkingexampleTests
 //
 //  Created by Mohammed S A Kwaik on 9/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iosnetworkingexample
 
-class UIStoryboardExtensionTest: XCTestCase {
+class BoolExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,8 +33,9 @@ class UIStoryboardExtensionTest: XCTestCase {
         }
     }
     
-    func testStoryboardShared() {
-        XCTAssert(true)
+    func testRandom() {
+        let value = Bool.random()
+        XCTAssertTrue( value == true || value == false )
     }
     
 }
