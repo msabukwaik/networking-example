@@ -1,22 +1,21 @@
 //
-//  iosnetworkingexampleUITests.swift
+//  MainControllerSenseUITests.swift
 //  iosnetworkingexampleUITests
 //
-//  Created by Mohammed S A Kwaik on 9/14/17.
+//  Created by Mohammed S A Kwaik on 10/4/17.
 //  Copyright © 2017 Mohammed S A Kwaik. All rights reserved.
 //
 
 import XCTest
 
-class iosnetworkingexampleUITests: XCTestCase {
+class MainControllerSenseUITests: XCTestCase {
     
     var app:XCUIApplication!
-        
+    
     override func setUp() {
         super.setUp()
         
         app = XCUIApplication()
-        
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -32,4 +31,8 @@ class iosnetworkingexampleUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testMainControllerSenseContent() {
+        //Check if the main controller sense has a button called show random image
+        XCTAssertTrue(app.buttons["Show Random Image"].exists)
+    }
 }

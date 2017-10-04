@@ -20,6 +20,9 @@ class PhotoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Used by the ui test in order to check if the view has an image or not
+        photoImageView.accessibilityIdentifier = "flickerImage"
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +48,12 @@ class PhotoController: UIViewController {
                         print(photo?.desc() ?? "")
                         self.photoImageView.image = photo?.image
                         self.enableUI(true)
+                        if let _ = photo?.image{
+                            
+                            //Set identifier to be used by the ui unit tests
+                            //in order to test that the image has been loaded
+                            self.photoImageView.accessibilityIdentifier = "valedFlickerImage"
+                        }
                     }else{
                         print("Error: \(error!)")
                     }

@@ -55,6 +55,8 @@
 		5720DB9C1F73264B002CD0D3 /* UIImageExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */; };
 		5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */; };
 		5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */; };
+		5746421C1F854826000A55F5 /* MainControllerSenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */; };
+		5746421E1F854848000A55F5 /* PhotoControllerScenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */; };
 		575147581F73A89B00EC2970 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575147571F73A89B00EC2970 /* UtilityTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		5720DB9B1F73264B002CD0D3 /* UIImageExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTest.swift; sourceTree = "<group>"; };
 		5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensionTest.swift; sourceTree = "<group>"; };
 		5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensionTest.swift; sourceTree = "<group>"; };
+		5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerSenseUITests.swift; sourceTree = "<group>"; };
+		5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoControllerScenseUITests.swift; sourceTree = "<group>"; };
 		575147571F73A89B00EC2970 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +192,8 @@
 			children = (
 				5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */,
 				5703C9CD1F69D5E0004E6011 /* Info.plist */,
+				5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */,
+				5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */,
 			);
 			path = iosnetworkingexampleUITests;
 			sourceTree = "<group>";
@@ -468,11 +474,13 @@
 				5720DB741F731025002CD0D3 /* BoolExtension.swift in Sources */,
 				5720DB821F73122D002CD0D3 /* Utility.swift in Sources */,
 				5720DB781F731046002CD0D3 /* UIImageExtension.swift in Sources */,
+				5746421E1F854848000A55F5 /* PhotoControllerScenseUITests.swift in Sources */,
 				5720DB841F731260002CD0D3 /* FlickerController.swift in Sources */,
 				5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */,
 				5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
 				5720DB891F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
 				5720DB621F72C449002CD0D3 /* PhotoCommon.swift in Sources */,
+				5746421C1F854826000A55F5 /* MainControllerSenseUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
