@@ -55,9 +55,9 @@
 		5720DB9C1F73264B002CD0D3 /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9B1F73264B002CD0D3 /* UIImageExtensionTests.swift */; };
 		5720DB9E1F73265A002CD0D3 /* UIApplicationExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTests.swift */; };
 		5720DBA01F73266B002CD0D3 /* UIStoryboardExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTests.swift */; };
-		572B990A1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572B99081F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld */; };
-		572B990B1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572B99081F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld */; };
-		572B990C1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572B99081F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld */; };
+		572B99831F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572B99811F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld */; };
+		572B998A1F8BD37600B3689A /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B99881F8BD37600B3689A /* Photo+CoreDataClass.swift */; };
+		572B998B1F8BD37600B3689A /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B99891F8BD37600B3689A /* Photo+CoreDataProperties.swift */; };
 		5746421C1F854826000A55F5 /* MainControllerSenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */; };
 		5746421E1F854848000A55F5 /* PhotoControllerScenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */; };
 		575147581F73A89B00EC2970 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575147571F73A89B00EC2970 /* UtilityTest.swift */; };
@@ -113,7 +113,9 @@
 		5720DB9B1F73264B002CD0D3 /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
 		5720DB9D1F73265A002CD0D3 /* UIApplicationExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensionTests.swift; sourceTree = "<group>"; };
 		5720DB9F1F73266B002CD0D3 /* UIStoryboardExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensionTests.swift; sourceTree = "<group>"; };
-		572B99091F8AC4F300B3689A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		572B99821F8BD18B00B3689A /* iosnetworkingexample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iosnetworkingexample.xcdatamodel; sourceTree = "<group>"; };
+		572B99881F8BD37600B3689A /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		572B99891F8BD37600B3689A /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerSenseUITests.swift; sourceTree = "<group>"; };
 		5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoControllerScenseUITests.swift; sourceTree = "<group>"; };
 		575147571F73A89B00EC2970 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
@@ -167,7 +169,7 @@
 		5703C9AA1F69D5E0004E6011 /* iosnetworkingexample */ = {
 			isa = PBXGroup;
 			children = (
-				572B99081F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld */,
+				572B99801F8BD17500B3689A /* CoreData */,
 				5720DB7A1F7310EC002CD0D3 /* View */,
 				5720DB791F731096002CD0D3 /* Extensions */,
 				5720DB671F730E78002CD0D3 /* Helper */,
@@ -272,6 +274,16 @@
 				5703CA171F6F2EC7004E6011 /* FlickerControlerTest.swift */,
 			);
 			path = ControllerTest;
+			sourceTree = "<group>";
+		};
+		572B99801F8BD17500B3689A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				572B99881F8BD37600B3689A /* Photo+CoreDataClass.swift */,
+				572B99891F8BD37600B3689A /* Photo+CoreDataProperties.swift */,
+				572B99811F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		575147561F73A87C00EC2970 /* Helper */ = {
@@ -426,12 +438,14 @@
 			files = (
 				5720DB761F731046002CD0D3 /* UIImageExtension.swift in Sources */,
 				5720DB6E1F731008002CD0D3 /* IntExtension.swift in Sources */,
-				572B990A1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */,
+				572B998A1F8BD37600B3689A /* Photo+CoreDataClass.swift in Sources */,
 				5720DB691F730FCC002CD0D3 /* StringExtension.swift in Sources */,
 				5720DB801F73122D002CD0D3 /* Utility.swift in Sources */,
+				572B998B1F8BD37600B3689A /* Photo+CoreDataProperties.swift in Sources */,
 				5703C9DA1F69E9E4004E6011 /* Constaint.swift in Sources */,
 				5720DB721F731025002CD0D3 /* BoolExtension.swift in Sources */,
 				5720DB871F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */,
+				572B99831F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld in Sources */,
 				5720DB921F7322B6002CD0D3 /* MainController.swift in Sources */,
 				5703C9AE1F69D5E0004E6011 /* PhotoController.swift in Sources */,
 				5720DB7C1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
@@ -463,7 +477,6 @@
 				5720DB731F731025002CD0D3 /* BoolExtension.swift in Sources */,
 				5720DB9A1F732631002CD0D3 /* BoolExtensionTests.swift in Sources */,
 				5720DB8A1F73198D002CD0D3 /* Constaint.swift in Sources */,
-				572B990B1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */,
 				5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
 				5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */,
 				5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */,
@@ -476,7 +489,6 @@
 			files = (
 				5720DB8B1F73198E002CD0D3 /* Constaint.swift in Sources */,
 				5720DB6B1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
-				572B990C1F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld in Sources */,
 				5720DB701F731008002CD0D3 /* IntExtension.swift in Sources */,
 				5720DB7E1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
 				5720DB741F731025002CD0D3 /* BoolExtension.swift in Sources */,
@@ -772,12 +784,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		572B99081F8AC4F300B3689A /* iosnetworkingexample.xcdatamodeld */ = {
+		572B99811F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				572B99091F8AC4F300B3689A /* Model.xcdatamodel */,
+				572B99821F8BD18B00B3689A /* iosnetworkingexample.xcdatamodel */,
 			);
-			currentVersion = 572B99091F8AC4F300B3689A /* Model.xcdatamodel */;
+			currentVersion = 572B99821F8BD18B00B3689A /* iosnetworkingexample.xcdatamodel */;
 			path = iosnetworkingexample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
