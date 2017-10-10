@@ -23,6 +23,12 @@ class PhotoController: UIViewController {
         
         //Used by the ui test in order to check if the view has an image or not
         photoImageView.accessibilityIdentifier = "flickerImage"
+        
+        //load the 1st photo from core data
+        let storedPhotos = PhotoCommon.getContextPhotos()
+        if storedPhotos.count >= 1{
+            self.photoImageView.image = storedPhotos[0].image
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,9 +37,7 @@ class PhotoController: UIViewController {
     }
     
     //MARK : Action
-    
     @IBAction func getNewImage(_ sender: Any) {
-        
         //Update the UI
         self.enableUI(false)
         if seederDataSource{
@@ -64,7 +68,6 @@ class PhotoController: UIViewController {
     }
     
     //MARK : Network requests
-    
     func enableUI(_ Enabled:Bool) {
         getImageBtn.isEnabled = Enabled
         
