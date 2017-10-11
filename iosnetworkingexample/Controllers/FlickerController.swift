@@ -61,7 +61,7 @@ class FlickerControler {
                         completion(nil, NetworkError(withDescription: "Unable to convert the image to data"))
                         return
                     }
-                    print("image data = \(imageData)")
+                    
                     guard let image = UIImage(data: imageData) else {
                         completion(nil, NetworkError(withDescription: "Unable to convert image data to uiimage"))
                         return

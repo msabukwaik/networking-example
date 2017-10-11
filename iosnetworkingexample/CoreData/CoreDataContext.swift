@@ -60,7 +60,3 @@ class CoreDataContext {
         }
     }
 }
-
-extension CoreDataContext {
-}
-

@@ -26,6 +26,8 @@ struct PhotoCommon {
     var is_primary:Int?
     var has_comment:Int?
     
+    static var cashedPhotos:[PhotoCommon] = [PhotoCommon]()
+    
     init(id:String?, image:UIImage?, title:String?, owner:String?, secret:String?, server:Int?, farm:Int?, ispublic:Int?, isfriend:Bool?, isfamily:Bool?, url_m:String?, height_m:Int?, width_m:Int?, is_primary:Int?, has_comment:Int?) {
         self.id = id
         self.image = image
@@ -54,27 +56,61 @@ struct PhotoCommon {
         
     }
     
+    // MARK: Core Data Section
     func saveToContext(completion : (Bool, String?) -> ()){
         //Convert PhotoCommon to PhotoMO
         //Create an object of photo and set its values
         let photo:PhotoMO = PhotoMO(context: CoreDataContext.context)
         photo.id = self.id
-        if let imageVal = self.image{
-            photo.image = UIImagePNGRepresentation(imageVal) as NSData?
-        }
         photo.title = self.title
         photo.owner = self.owner
         photo.secret = self.secret
-        photo.server = Int64(self.server!)
-        photo.farm = Int64(self.farm!)
-        photo.ispublic = Int64(self.ispublic!)
-        photo.isfriend = self.isfriend!
-        photo.isfamily = self.isfamily!
+        
+        if let imageVal = self.image{
+            photo.image = UIImagePNGRepresentation(imageVal) as NSData?
+        }
+        
+        if let server = self.server{
+            photo.server = Int64(server)
+        }
+        
+        if let farm = self.farm{
+            photo.farm = Int64(farm)
+        }
+        
+        if let ispublic = self.ispublic{
+            photo.ispublic = Int64(ispublic)
+        }
+        
+        
+        if let isfriend = self.isfriend{
+            photo.isfriend = isfriend
+        }
+        
+        
+        if let isfamily = self.isfamily{
+            photo.isfamily = isfamily
+        }
+        
         photo.url_m = self.url_m
-        photo.height_m = Int64(self.height_m!)
-        photo.width_m = Int64(self.width_m!)
-        photo.is_primary = Int64(self.is_primary!)
-        photo.has_comment = Int64(self.has_comment!)
+        
+        if let height_m = self.height_m{
+            photo.height_m = Int64(height_m)
+        }
+        
+        
+        if let width_m = self.width_m{
+            photo.width_m = Int64(width_m)
+        }
+        
+        if let is_primary = self.is_primary{
+            photo.is_primary = Int64(is_primary)
+        }
+        
+        if let has_comment = self.has_comment{
+            photo.has_comment = Int64(has_comment)
+        }
+        
         //Save the changes
         CoreDataContext.saveContext { (success, message) in
             if (success){
@@ -98,26 +134,60 @@ struct PhotoCommon {
         for photo in photos {
             tempPhotoCommon = PhotoCommon()
             tempPhotoCommon.id = photo.id
-            if let imageData = photo.image{
-                tempPhotoCommon.image = UIImage(data: imageData as Data)
-            }
             tempPhotoCommon.title = photo.title
             tempPhotoCommon.owner = photo.owner
             tempPhotoCommon.secret = photo.secret
-            tempPhotoCommon.server = Int(photo.server)
-            tempPhotoCommon.farm = Int(photo.farm)
-            tempPhotoCommon.ispublic = Int(photo.ispublic)
             tempPhotoCommon.isfriend = photo.isfriend
             tempPhotoCommon.isfamily = photo.isfamily
             tempPhotoCommon.url_m = photo.url_m
-            tempPhotoCommon.height_m = Int(photo.height_m)
-            tempPhotoCommon.width_m = Int(photo.width_m)
-            tempPhotoCommon.is_primary = Int(photo.is_primary)
-            tempPhotoCommon.has_comment = Int(photo.has_comment)
+            
+            if let imageData = photo.image{
+                tempPhotoCommon.image = UIImage(data: imageData as Data)
+            }
+            
+            if let server = tempPhotoCommon.server{
+                tempPhotoCommon.server = Int(server)
+            }
+            
+            if let farm = tempPhotoCommon.farm{
+                tempPhotoCommon.farm = Int(farm)
+            }
+            
+            if let ispublic = tempPhotoCommon.ispublic{
+                tempPhotoCommon.ispublic = Int(ispublic)
+            }
+            
+            if let height_m = tempPhotoCommon.height_m{
+                tempPhotoCommon.height_m = Int(height_m)
+            }
+            
+            if let width_m = tempPhotoCommon.width_m{
+                tempPhotoCommon.width_m = Int(width_m)
+            }
+            
+            if let is_primary = tempPhotoCommon.is_primary{
+                tempPhotoCommon.is_primary = Int(is_primary)
+            }
+            
+            if let has_comment = tempPhotoCommon.has_comment{
+                tempPhotoCommon.has_comment = Int(has_comment)
+            }
             photoCommons.append(tempPhotoCommon)
         }
         
         return photoCommons
+    }
+    
+    // MARK: Cashed Data Section
+    static func addToCash(photo:PhotoCommon){
+        cashedPhotos.append(photo)
+    }
+    
+    // MARK: Cashed Data Section
+    static func addToCash(photos:[PhotoCommon]){
+        for photo in photos {
+            cashedPhotos.append(photo)
+        }
     }
     
     static func seed() -> PhotoCommon {

@@ -13,7 +13,7 @@ class PhotoController: UIViewController {
     @IBOutlet weak var flickerExampleLbl: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var getImageBtn: UIButton!
-    let seederDataSource:Bool = false //Determine the data source the seeded the views
+    let loadDataSource:DataSourceLayer  = .coreDataLayer
     
     
     
@@ -23,12 +23,6 @@ class PhotoController: UIViewController {
         
         //Used by the ui test in order to check if the view has an image or not
         photoImageView.accessibilityIdentifier = "flickerImage"
-        
-        //load the 1st photo from core data
-        let storedPhotos = PhotoCommon.getContextPhotos()
-        if storedPhotos.count >= 1{
-            self.photoImageView.image = storedPhotos[0].image
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,29 +32,45 @@ class PhotoController: UIViewController {
     
     //MARK : Action
     @IBAction func getNewImage(_ sender: Any) {
-        //Update the UI
+        
+        //Disable Get New Image button till this photo is fetched
         self.enableUI(false)
-        if seederDataSource{
+        
+        switch loadDataSource {
+        case .coreDataLayer:
+            if PhotoCommon.getContextPhotos().count >= 1{
+                DispatchQueue.main.async {
+                    self.photoImageView.image = PhotoCommon.getContextPhotos()[Int(arc4random_uniform(UInt32(PhotoCommon.getContextPhotos().count)))].image
+                    self.enableUI(true)
+                }
+            }
+        case .cashedLayer:
+            if PhotoCommon.cashedPhotos.count >= 1{
+                DispatchQueue.main.async {
+                    self.photoImageView.image = PhotoCommon.cashedPhotos[0].image
+                    self.enableUI(true)
+                }
+            }
+        case .seedLayer:
             DispatchQueue.main.async {
                 self.photoImageView.image = PhotoCommon.seed().image
                 self.enableUI(true)
             }
-        }else{
+        case .networkLayer:
             FlickerControler.getImageFromFlicker { (photo, error) in
-                DispatchQueue.main.async {
-                    if error == nil {
-                        print(photo?.desc() ?? "")
+                if error == nil {
+                    DispatchQueue.main.async {
                         self.photoImageView.image = photo?.image
                         self.enableUI(true)
-                        if let _ = photo?.image{
-                            
-                            //Set identifier to be used by the ui unit tests
-                            //in order to test that the image has been loaded
-                            self.photoImageView.accessibilityIdentifier = "valedFlickerImage"
-                        }
-                    }else{
-                        print("Error: \(error!)")
                     }
+                    
+                    if let _ = photo?.image{
+
+                        //Set identifier to be used by the ui unit tests
+                        //in order to test that the image has been loaded
+                        self.photoImageView.accessibilityIdentifier = "valedFlickerImage"
+                    }
+                    photo?.saveToContext(completion: { (success, message) in})
                 }
             }
         }
@@ -77,5 +87,13 @@ class PhotoController: UIViewController {
             getImageBtn.alpha = 0.5
         }
     }
+}
+
+// Enum used for the type of the datasource used to feed the views
+enum DataSourceLayer:String {
+    case coreDataLayer
+    case cashedLayer
+    case seedLayer
+    case networkLayer
 }
 
