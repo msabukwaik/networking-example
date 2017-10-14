@@ -9,13 +9,47 @@
 import UIKit
 import CoreData
 
-class CoreDataContext {
-    static var context:NSManagedObjectContext{
+/// This class is used for storing and fetching the data stored in the core data
+public class CoreDataContext {
+    
+    /**
+     This variable is used for presnting the managed object context
+     It's used for working with core data stack
+     
+     ### Usage Example: ###
+     ````
+     let context = CoreDataContext.context
+     let photoFetchRequest:NSFetchRequest<PhotoMO> = PhotoMO.fetchRequest()
+     var photos:[PhotoMO] = [PhotoMO]()
+     do{
+         photos = try CoreDataContext.context.fetch(photoFetchRequest)
+     }catch{
+     
+     }
+     ````
+     */
+    public static var context:NSManagedObjectContext{
         return persistentContainer.viewContext
     }
     
     // MARK: - Core Data stack
-    static var persistentContainer: NSPersistentContainer = {
+    /**
+     This variable is used for presnting the managed object context
+     It's used for working with core data stack
+     
+     ### Usage Example: ###
+     ````
+     let context = CoreDataContext.context
+     let photoFetchRequest:NSFetchRequest<PhotoMO> = PhotoMO.fetchRequest()
+     var photos:[PhotoMO] = [PhotoMO]()
+     do{
+     photos = try CoreDataContext.context.fetch(photoFetchRequest)
+     }catch{
+     
+     }
+     ````
+     */
+    public static var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -44,7 +78,7 @@ class CoreDataContext {
     
     // MARK: - Core Data Saving support
     
-    static func saveContext (completion:(Bool, String?)->()) {
+    public static func saveContext (completion:(Bool, String?)->()) {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {

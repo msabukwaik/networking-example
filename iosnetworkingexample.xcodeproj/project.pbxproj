@@ -38,8 +38,6 @@
 		5720DB801F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
 		5720DB811F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
 		5720DB821F73122D002CD0D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB7F1F73122D002CD0D3 /* Utility.swift */; };
-		5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
-		5720DB841F731260002CD0D3 /* FlickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703CA151F6F274B004E6011 /* FlickerController.swift */; };
 		5720DB871F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
 		5720DB881F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
 		5720DB891F73128E002CD0D3 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720DB861F73128E002CD0D3 /* UIStoryboardExtension.swift */; };
@@ -506,7 +504,6 @@
 				5720DB9A1F732631002CD0D3 /* BoolExtensionTests.swift in Sources */,
 				5720DB8A1F73198D002CD0D3 /* Constaint.swift in Sources */,
 				5720DB8E1F731AA2002CD0D3 /* NetworkError.swift in Sources */,
-				5720DB831F73125F002CD0D3 /* FlickerController.swift in Sources */,
 				5720DB651F72CF75002CD0D3 /* PhotoCommonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +523,6 @@
 				577030781F8D31B40003546F /* iosnetworkingexample.xcdatamodeld in Sources */,
 				577030941F8D51690003546F /* PhotoMO+CoreDataClass.swift in Sources */,
 				5746421E1F854848000A55F5 /* PhotoControllerScenseUITests.swift in Sources */,
-				5720DB841F731260002CD0D3 /* FlickerController.swift in Sources */,
 				577030971F8D51690003546F /* PhotoMO+CoreDataProperties.swift in Sources */,
 				5703C9CC1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift in Sources */,
 				5720DB8F1F731AA2002CD0D3 /* NetworkError.swift in Sources */,

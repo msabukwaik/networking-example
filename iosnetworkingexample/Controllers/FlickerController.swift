@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FlickerControler {
+/// This class is used for fetching the data from the networking layer
+public class FlickerControler {
     class func getImageFromFlicker(completion: @escaping (_ photo:PhotoCommon?,_ errorMessage:NetworkError? )->()) {
         
         //Prepare request info
@@ -20,14 +21,12 @@ class FlickerControler {
             "nojsoncallback" : "1",
             "extras" : "url_m"
         ]
-
         let urlString = Constaint.Flicker.APIBaseClass + (escapeParamters(parms: getPhotoParmeters) ?? "")
         let url = URL(string: urlString)
         let request:URLRequest = URLRequest(url: url!)
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             do {
                 if error == nil {
-                    
                     //data is required
                     guard let data = data else {
                         completion(nil, NetworkError(withDescription: "Data is missed"))

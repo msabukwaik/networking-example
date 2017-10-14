@@ -8,7 +8,8 @@
 
 import UIKit
 
-struct NetworkError: Error {
+/// This is a struct used for presenting errors associated to network requests
+public struct NetworkError: Error {
     var description:String?
     init(withDescription desc:String?) {
         self.description = desc

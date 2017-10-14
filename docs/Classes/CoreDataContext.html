@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreDataContext Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CoreDataContext" class="dashAnchor"></a>
+    <a title="CoreDataContext Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (62% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CoreDataContext Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataContext.html">CoreDataContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:20iosnetworkingexample16FlickerControlerC">FlickerControler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PhotoMO.html">PhotoMO</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:20iosnetworkingexample12NetworkErrorV">NetworkError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoCommon.html">PhotoCommon</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CoreDataContext</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CoreDataContext</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is used for storing and fetching the data stored in the core data</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20iosnetworkingexample15CoreDataContextC7contextSo015NSManagedObjectD0CvZ"></a>
+                    <a name="//apple_ref/swift/Variable/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20iosnetworkingexample15CoreDataContextC7contextSo015NSManagedObjectD0CvZ">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This variable is used for presnting the managed object context
+It&rsquo;s used for working with core data stack</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight plaintext"><code>let context = CoreDataContext.context
+let photoFetchRequest:NSFetchRequest&lt;PhotoMO&gt; = PhotoMO.fetchRequest()
+var photos:[PhotoMO] = [PhotoMO]()
+do{
+    photos = try CoreDataContext.context.fetch(photoFetchRequest)
+}catch{
+
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">context</span><span class="p">:</span><span class="kt">NSManagedObjectContext</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Core%20Data%20stack"></a>
+                <a name="//apple_ref/swift/Section/Core Data stack" class="dashAnchor"></a>
+                <a href="#/Core%20Data%20stack">
+                  <h3 class="section-name">Core Data stack</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20iosnetworkingexample15CoreDataContextC19persistentContainerSo012NSPersistentF0CvZ"></a>
+                    <a name="//apple_ref/swift/Variable/persistentContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20iosnetworkingexample15CoreDataContextC19persistentContainerSo012NSPersistentF0CvZ">persistentContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This variable is used for presnting the managed object context
+It&rsquo;s used for working with core data stack</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight plaintext"><code>let context = CoreDataContext.context
+let photoFetchRequest:NSFetchRequest&lt;PhotoMO&gt; = PhotoMO.fetchRequest()
+var photos:[PhotoMO] = [PhotoMO]()
+do{
+photos = try CoreDataContext.context.fetch(photoFetchRequest)
+}catch{
+
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">persistentContainer</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Core%20Data%20Saving%20support"></a>
+                <a name="//apple_ref/swift/Section/Core Data Saving support" class="dashAnchor"></a>
+                <a href="#/Core%20Data%20Saving%20support">
+                  <h3 class="section-name">Core Data Saving support</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20iosnetworkingexample15CoreDataContextC04saveD0yySb_SSSgtc10completion_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/saveContext(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20iosnetworkingexample15CoreDataContextC04saveD0yySb_SSSgtc10completion_tFZ">saveContext(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CoreDataContext</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-10-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
