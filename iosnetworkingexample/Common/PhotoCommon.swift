@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 
-/// This is a struct used for presenting flicker photo
+/// This is a struct used for presenting a flicker photo
 public struct PhotoCommon {
     
     // MARK: Attributes
@@ -435,5 +435,3 @@ public struct PhotoCommon {
         return description
     }
 }
-
-

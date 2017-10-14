@@ -10,8 +10,26 @@ import UIKit
 
 /// This is a struct used for presenting errors associated to network requests
 public struct NetworkError: Error {
-    var description:String?
-    init(withDescription desc:String?) {
+    
+    // MARK: Attributes
+    
+    /// The description of the error as a string
+    public var description:String?
+    
+    // MARK: Constructors
+    
+    /**
+     Call this constructor to inilialize the description attribute
+     - Parameters
+     - withDescription : the description message of the error
+     
+     ### Usage Example: ###
+     ````
+     let ne = NetworkError(withDescription : "Invalid access")
+     ````
+     
+     */
+    public init(withDescription desc:String?) {
         self.description = desc
     }
 }
