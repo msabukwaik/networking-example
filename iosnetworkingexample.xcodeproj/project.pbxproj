@@ -185,9 +185,7 @@
 				5720DB671F730E78002CD0D3 /* Helper */,
 				5720DB631F72C455002CD0D3 /* Controllers */,
 				5720DB5E1F72C2FB002CD0D3 /* Common */,
-				5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */,
-				5703C9B21F69D5E0004E6011 /* Assets.xcassets */,
-				5703C9B71F69D5E0004E6011 /* Info.plist */,
+				57D2C0461F936C2700D446FB /* Supporting Files */,
 			);
 			path = iosnetworkingexample;
 			sourceTree = "<group>";
@@ -320,6 +318,16 @@
 				5770307E1F8D31EE0003546F /* PhotoManagedObjectTests.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		57D2C0461F936C2700D446FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5703C9B71F69D5E0004E6011 /* Info.plist */,
+				5703C9AB1F69D5E0004E6011 /* AppDelegate.swift */,
+				5703C9B21F69D5E0004E6011 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
