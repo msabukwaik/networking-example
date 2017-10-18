@@ -7,3 +7,5 @@ In this exmaple I will show you how to :
 * Display the fetched data in a view
 * The data displayed comes from different layers
 * Using realm/jazzy for generating documentation
+* Using Unit Test
+* Using UI Test
