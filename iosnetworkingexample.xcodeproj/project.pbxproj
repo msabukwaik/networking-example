@@ -56,6 +56,7 @@
 		572B99831F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572B99811F8BD18B00B3689A /* iosnetworkingexample.xcdatamodeld */; };
 		5746421C1F854826000A55F5 /* MainControllerSenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */; };
 		5746421E1F854848000A55F5 /* PhotoControllerScenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */; };
+		575146E31FBC3B0B00076760 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575146E21FBC3B0B00076760 /* SnapshotHelper.swift */; };
 		575147581F73A89B00EC2970 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575147571F73A89B00EC2970 /* UtilityTest.swift */; };
 		577030741F8D313D0003546F /* CoreDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577030731F8D313D0003546F /* CoreDataContext.swift */; };
 		577030751F8D31B00003546F /* CoreDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577030731F8D313D0003546F /* CoreDataContext.swift */; };
@@ -124,6 +125,7 @@
 		572B99821F8BD18B00B3689A /* iosnetworkingexample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iosnetworkingexample.xcdatamodel; sourceTree = "<group>"; };
 		5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerSenseUITests.swift; sourceTree = "<group>"; };
 		5746421D1F854848000A55F5 /* PhotoControllerScenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoControllerScenseUITests.swift; sourceTree = "<group>"; };
+		575146E21FBC3B0B00076760 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		575147571F73A89B00EC2970 /* UtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
 		577030731F8D313D0003546F /* CoreDataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContext.swift; sourceTree = "<group>"; };
 		5770307E1F8D31EE0003546F /* PhotoManagedObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagedObjectTests.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		5703C9CA1F69D5E0004E6011 /* iosnetworkingexampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				575146E21FBC3B0B00076760 /* SnapshotHelper.swift */,
 				5703C9CB1F69D5E0004E6011 /* iosnetworkingexampleUITests.swift */,
 				5703C9CD1F69D5E0004E6011 /* Info.plist */,
 				5746421B1F854826000A55F5 /* MainControllerSenseUITests.swift */,
@@ -525,6 +528,7 @@
 				5720DB6B1F730FCC002CD0D3 /* StringExtension.swift in Sources */,
 				5720DB701F731008002CD0D3 /* IntExtension.swift in Sources */,
 				5720DB7E1F7311CE002CD0D3 /* UIApplicationExtension.swift in Sources */,
+				575146E31FBC3B0B00076760 /* SnapshotHelper.swift in Sources */,
 				5720DB741F731025002CD0D3 /* BoolExtension.swift in Sources */,
 				5720DB821F73122D002CD0D3 /* Utility.swift in Sources */,
 				5720DB781F731046002CD0D3 /* UIImageExtension.swift in Sources */,

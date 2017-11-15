@@ -16,7 +16,7 @@ class iosnetworkingexampleUITests: XCTestCase {
         super.setUp()
         
         app = XCUIApplication()
-        
+        setupSnapshot(app)
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -41,12 +41,14 @@ class iosnetworkingexampleUITests: XCTestCase {
             var fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
             fullScreenShotAttachment.lifetime = .keepAlways
             activity.add(fullScreenShotAttachment)
+			snapshot("01Example")
             
             app.buttons["Show Random Image"].firstMatch.tap()
             fullScreenShot = mainScreen.screenshot()
             fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
             fullScreenShotAttachment.lifetime = .keepAlways
             activity.add(fullScreenShotAttachment)
+			snapshot("02Example")
             
             app.buttons["Get new image"].firstMatch.tap()
             sleep(10)
@@ -54,6 +56,7 @@ class iosnetworkingexampleUITests: XCTestCase {
             fullScreenShotAttachment = XCTAttachment(screenshot: fullScreenShot)
             fullScreenShotAttachment.lifetime = .keepAlways
             activity.add(fullScreenShotAttachment)
+			snapshot("03Example")
         }
     }
     
